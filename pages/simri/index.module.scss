@@ -1,0 +1,127 @@
+// font
+@font-face {
+  font-family: "bold";
+  src: url("/fonts/SPOQAHANSANSNEO-BOLD.TTF");
+}
+@font-face {
+  font-family: "medium";
+  src: url("/fonts/SPOQAHANSANSNEO-MEDIUM.TTF");
+}
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/SPOQAHANSANSNEO-REGULAR.TTF");
+}
+@font-face {
+  font-family: "light";
+  src: url("/fonts/SPOQAHANSANSNEO-LIGHT.TTF");
+}
+@font-face {
+  font-family: "thin";
+  src: url("/fonts/SPOQAHANSANSNEO-THIN.TTF");
+}
+
+$color_background: rgb(237, 240, 243);
+$color_border: #f2f2f2;
+$color_theme: #2a65ff;
+
+$font_large: 24px;
+$font_medium: 20px;
+$font_text: 16px;
+$font_tag: 14px;
+
+@mixin simri_border {
+  border-bottom: 1px solid $color_border;
+}
+
+.page_container {
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  background-color: $color_background;
+  word-break: keep-all;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  background-color: white;
+}
+
+.article {
+  .section1 {
+    display: flex;
+    justify-content: center;
+    .banner_img {
+      width: 400px;
+    }
+  }
+
+  .section2 > div > div {
+    margin-bottom: 20px;
+  }
+  .section2 {
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .info_img {
+        width: 100px;
+      }
+
+      .info_main {
+        flex-grow: 1;
+        margin-left: 15px;
+        h1 {
+          margin: 0px;
+          font-family: "bold";
+          font-size: $font_large;
+        }
+        p {
+          color: gray;
+          font-family: "medium";
+          font-size: $font_tag;
+        }
+      }
+    }
+    .main {
+      p {
+        font-family: "medium";
+        font-size: $font_text;
+        margin-bottom: 0px;
+        margin-top: 3px;
+      }
+    }
+    .tags > span {
+      margin-right: 10px;
+    }
+    .action {
+      margin-bottom: 30px;
+    }
+    .bottom {
+      font-family: "medium";
+      color: gray;
+      text-align: center;
+    }
+  }
+
+  .section4 {
+    .item {
+      margin-top: 20px;
+      p {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-family: "medium";
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "/pages/simri/index.module.scss";
+
+.container {
+  @include simri_border;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "/pages/simri/index.module.scss";
+
+.container {
+  width: 100%;
+  p {
+    color: $color_theme;
+    font-family: bold;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  h1 {
+    margin: 0px;
+    font-family: "bold";
+    font-size: $font_large;
+  }
+}

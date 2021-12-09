@@ -1,0 +1,16 @@
+@import "/pages/simri/index.module.scss";
+
+.container {
+  height: 50px;
+  @include simri_border;
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "bold";
+  font-size: $font_text;
+}

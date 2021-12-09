@@ -1,0 +1,17 @@
+@import "/pages/simri/index.module.scss";
+
+.container {
+  width: 100%;
+}
+
+.inner {
+  cursor: pointer;
+  text-align: center;
+  background-color: $color_theme;
+  color: white;
+  font-family: "bold";
+
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: $font_medium;
+}
