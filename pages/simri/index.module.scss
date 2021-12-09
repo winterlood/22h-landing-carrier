@@ -52,7 +52,7 @@ $font_tag: 14px;
 }
 
 .container {
-  width: 500px;
+  max-width: 500px;
   background-color: white;
 }
 
@@ -61,7 +61,9 @@ $font_tag: 14px;
     display: flex;
     justify-content: center;
     .banner_img {
-      width: 400px;
+      width: 100%;
+      min-width: 350px;
+      max-width: 400px;
     }
   }
 
